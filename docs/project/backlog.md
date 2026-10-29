@@ -16,11 +16,11 @@ This file tracks **implementable work**, not legal permissions, enduring archite
 
 | Story Number | Phase | description | State | PR Link |
 |---|---|---|---|---|
-| sp-1 | Phase 0 | Create the independently owned `scrumprimer` GitHub repository and initialize a clean project skeleton without copying the upstream application. | To Do | — |
+| sp-1 | Phase 0 | Create the independently owned `scrumprimer` GitHub repository and initialize a clean project skeleton without copying the upstream application. | Done | — |
 | sp-2 | Phase 0 | Configure a pinned Hugo version, `hugo.toml`, English Markdown content root, and correct `/scrumprimer/` project-path URLs. | To Do | — |
 | sp-3 | Phase 0 | Implement PR validation for Hugo builds, front-matter schema, expected routes, and project-path links. | To Do | — |
 | sp-4 | Phase 0 | Configure GitHub Pages deployment from protected `main` via GitHub Actions, with least-privilege workflow permissions. | To Do | — |
-| sp-5 | Phase 0 | Write `README.md`, `CONTRIBUTING.md`, `GOVERNANCE.md`, `CODE_OF_CONDUCT.md`, `COPYRIGHT.md`, `CONTENT_LICENSE.md`, `ATTRIBUTION.md`, and the new-code `LICENSE` with appropriately scoped rights statements. | To Do | — |
+| sp-5 | Phase 0 | Write `README.md`, `CONTRIBUTING.md`, `GOVERNANCE.md`, `CODE_OF_CONDUCT.md`, `COPYRIGHT.md`, `CONTENT_LICENSE.md`, `ATTRIBUTION.md`, and the new-code `LICENSE` with appropriately scoped rights statements. | Done | — |
 | sp-6 | Phase 0 | Add issue and PR templates, `CODEOWNERS`, reviewer responsibilities, and contributor rights-confirmation instructions. | In Progress | — |
 | sp-7 | Phase 0 | Build the content-and-asset provenance inventory (`data/rights.yaml`) and define the rights-status/front-matter validation policy. | To Do | — |
 | sp-8 | Phase 1 | Build original Hugo layouts, navigation, and reusable page components for the five English routes. | To Do | — |

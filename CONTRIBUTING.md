@@ -100,7 +100,7 @@ Replace these examples with real names and genuine sources. Record additional ri
 3. Put files in the license-appropriate directories; add required authorship, SPDX or Markdown license metadata, and third-party notices.
 4. Run relevant validation or tests, when available.
 5. Open a pull request explaining the change, the associated story or issue (e.g. `sp-12`), and any affected pages.
-6. **Paste and complete the license confirmation from section 3.**
+6. **Complete the licensing and attribution confirmation in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md).**
 7. Respond to reviewer questions, especially about rights, source material, accessibility, and documentation.
 
 The project reserves the right to decline changes that cannot be distributed under the stated licenses or that have insufficient rights documentation.

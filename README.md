@@ -27,6 +27,8 @@ This repository begins with its governance and licensing documents. The website 
 
 See the [project specification](docs/project/SPEC.md), [product backlog](docs/project/backlog.md), and [open decisions](docs/project/opendecisions.md).
 
+Project policies: [governance](GOVERNANCE.md), [code of conduct](CODE_OF_CONDUCT.md), [copyright](COPYRIGHT.md), [content license](CONTENT_LICENSE.md), [attribution](ATTRIBUTION.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
+
 ## License scope — determined by repository path
 
 This is a **multi-license repository**. The rules below identify the intended licenses of **original work contributed to this project**. They do **not** transfer rights in third-party material or upstream Scrum Primer content.
