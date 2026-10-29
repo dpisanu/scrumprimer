@@ -24,21 +24,21 @@ This register contains **choices that need an explicit decision**, not tasks to 
 
 ## Phase 1 — English release
 
-### OD-3 — Publication route for upstream English prose
+### OD-3 — Publication route while upstream rights are unresolved
 
-- **Question:** For which original English website pages is republication permission established? For any remaining pages, use new independently authored text or limit the public site to an architectural demo pending permission?
-- **Current position:** The original “This page is open source” notice does not itself identify a license. No copied prose can be relicensed by this project without authority.
-- **Needed by:** Publishing each English page (`sp-9`–`sp-13`) and Phase 1 public-release acceptance.
+- **Question:** If Guide reproduction, conversion, translation or export rights cannot be established, retain external-only Guide links indefinitely or pursue a separately scoped independently authored publication?
+- **Current position:** Ship a permission-safe resource baseline and prototype technical Guide features with independent test content. Do not copy or relicense upstream prose without authority. Investigating the actual rights is verification work in `sp-37`, not a policy choice.
+- **Needed by:** Actual Guide conversion/publication (`sp-40`) and full Guide-track acceptance (`sp-19`); not required to develop safe technical fixtures.
 - **Decision:** Open; **publication gate** under specification §8.
 
-### OD-4 — Optional translations information page
+### OD-4 — Optional standalone translations information page
 
-- **Question:** Should the English site include a `/translations/` roadmap/information page before Phase 3, without offering translated content?
-- **Current position:** Not required for Phase 1.
-- **Needed by:** Final Phase 1 navigation and scope (`sp-8`, `sp-19`) if included.
+- **Question:** Beyond required all-language resource discovery, is a separate translation-status/contribution page useful?
+- **Current position:** An optional information page is not a substitute for accessing existing resource-language variants; that access is required in `sp-36`, even with an English-only interface.
+- **Needed by:** Information architecture (`sp-35`) if included.
 - **Decision:** Open; default is **defer**.
 
-## Phase 4 — Exports
+## Distribution extensions
 
 ### OD-5 — Legacy MOBI distribution
 
@@ -62,7 +62,28 @@ The following items were in old §12, but they have discoverable answers rather 
 
 - **Original illustration coverage and attributions:** Verify specific image files, authors, license notices and hashes in `sp-14`; retain the CC BY-ND limitations from specification §6.
 - **Original English publication destinations:** Identify and check actual external PDF/EPUB download URLs in `sp-15`; do not mirror original binaries.
+- **Guide reuse rights:** Verify actual reproduction, conversion, adaptation, translation and export permissions per edition in `sp-37`; clear author credits alone are not authorization.
+- **Reported language availability:** Verify the initial language checklist in specification §5.6 through `sp-14`/`sp-15`, including Chinese script distinctions and actual format availability.
+
+## Additional locale and publication decisions
+
+### OD-7 — Missing website-page and chapter translations
+
+- **Question:** For a missing translated page/chapter, link explicitly to English, display a labeled English reading fallback, or show an unavailable/translation-needed view?
+- **Current position:** Asset selection is already specified as requested language then visibly labeled English, with an unavailable state if neither exists. Do not assume this settles page/chapter navigation, or silently present English as translated content.
+- **Needed by:** `sp-25` and the multilingual reading pilot (`sp-28`).
+- **Decision:** Open.
+
+## Resolved decisions
+
+### OD-8 — Initial Guide export formats and edition completeness
+
+- **Decision:** PDF and EPUB are the initial chapter and whole-Guide formats. Generate downloads at build time and deploy them with matching pages; no on-demand conversion backend. Publish whole-Guide downloads only for complete reviewed editions in the advertised language, not silent mixtures of English and translated chapters.
+- **Rationale:** Reuse one ordered Markdown source, keep downloads predictable and static, and avoid misleading readers about translation completeness.
+- **Date:** 2026-10-29.
+- **Reference:** Project-owner approval of the specification/backlog alignment in this conversation; no issue or PR reference recorded yet.
+- **Implementation:** `sp-29`–`sp-31`, `sp-38`, `sp-41`. Legacy MOBI remains open under OD-5.
 
 ## Decision log
 
-No decisions have yet been formally recorded in this document. Once made, move the relevant entry to a `Resolved decisions` section while retaining its identifier, outcome, rationale, date, and reference URL. Keep consequential design constraints synchronized in the specification and implementation work tracked in the backlog.
+Record future outcomes in `Resolved decisions`, retaining the identifier, outcome, rationale, date, and reference URL when available. OD-1 and OD-2 remain open as explicitly requested. Keep consequential design constraints synchronized in the specification and implementation work tracked in the backlog.
