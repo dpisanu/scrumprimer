@@ -1,8 +1,7 @@
 # Scrum Primer — Open Decisions
 
-**Document version:** 0.1  
 **Date:** 2026-10-29  
-**Specification:** [Scrum Primer Migration Specification v0.5](SPEC.md)  
+**Specification:** [Scrum Primer Migration Specification](SPEC.md)<br>
 **Backlog:** [backlog.md](backlog.md)
 
 This register contains **choices that need an explicit decision**, not tasks to implement already agreed requirements. Until a decision is recorded, the specification's existing guardrails apply. Record each outcome with the decision, rationale, date, and (when available) issue or PR link; do not silently change policy by editing a story.
@@ -18,8 +17,8 @@ This register contains **choices that need an explicit decision**, not tasks to 
 
 ### OD-2 — Licenses for newly authored contributions
 
-- **Question:** Adopt MIT for **new code** and CC BY 4.0 for **new editorial content**, or choose another explicitly defined combination? How will contributor acknowledgement be captured (e.g., PR confirmation vs. DCO sign-off)?
-- **Current position:** MIT and CC BY 4.0 are **recommendations only**. Neither applies automatically to upstream website text or CC BY-ND illustrations.
+- **Question:** How will contributor acknowledgement be captured (e.g., PR confirmation vs. DCO sign-off)?
+- **Current position:** Project-authored code and project documentation use MIT; original project content in the designated content paths and authorized translations use CC BY-NC-SA 4.0. These licenses do not apply automatically to upstream website text or CC BY-ND illustrations.
 - **Needed by:** Publishing contribution and license policies (`sp-5`, `sp-6`).
 - **Decision:** Open.
 

@@ -25,7 +25,7 @@ This repository begins with its governance and licensing documents. The website 
 5. **Exports:** PDF, EPUB, and other formats only for material we are entitled to reproduce and adapt.
 6. **Upstream proposal:** invite the original maintainers to review and potentially adopt the work.
 
-See [SPEC.md](SPEC.md), [backlog.md](backlog.md), and [opendecisions.md](opendecisions.md) once those project documents have been added.
+See the [project specification](docs/project/SPEC.md), [product backlog](docs/project/backlog.md), and [open decisions](docs/project/opendecisions.md).
 
 ## License scope — determined by repository path
 

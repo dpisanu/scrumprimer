@@ -1,6 +1,5 @@
 # Scrum Primer — Independent Content as Code Website Proposal
 
-**Specification version:** 0.1  
 **Status:** Planning draft — independent proof of concept  
 **Proposed repository:** `https://github.com/<your-username>/scrumprimer` (not created by this specification)  
 **Proposed preview site:** `https://<your-username>.github.io/scrumprimer/` (not deployed yet)  
@@ -215,18 +214,18 @@ assets:
 
 The project must distinguish **repository administration**, **copyright ownership**, **license grants**, and **editorial review**. Owning the GitHub repository does not make the maintainer the copyright owner of upstream or contributor materials.
 
-### 7.1 Proposed licensing model (recommendation, not adopted yet)
+### 7.1 Project licensing model
 
-| Material | Proposed license/policy | Who has authority? |
+| Material | Project license/policy | Who has authority? |
 |---|---|---|
-| Newly written Hugo templates, CSS, JS and other project code | **MIT** (or another explicit OSI-approved software license) in `LICENSE` | Authors of that code |
-| Newly authored website prose and new project documentation | **CC BY 4.0** recommended in `CONTENT_LICENSE.md` | The respective prose authors; only content they can legally license |
+| Newly written Hugo templates, CSS, JS, build scripts, configuration, and project documentation | **MIT** in `LICENSE` | Authors of that code and documentation |
+| Newly authored website prose, UI translations, authorized translations, and editorial artwork in their designated paths | **CC BY-NC-SA 4.0** in `CONTENT_LICENSE.md` | The respective contributors; only material they can legally license |
 | Reused original Scrum Primer overview and anime illustrations | **CC BY-ND 3.0**, unmodified, separately attributed | Existing creators/licensors; cannot be relicensed by this project |
 | Original English upstream website prose | **Unverified / not sublicensable by this project** until permission/license is established | Upstream copyright holders |
 | Original PDFs / EPUBs / MOBI files | **External links only**; not present in repository | Upstream rights holders |
 | Future translations | Rights to translation and to publication must be confirmed; record individual translator credits and license | Original prose rights holders + translators as applicable |
 
-**CC BY 4.0** for new prose is offered as a permissive, attribution-based option facilitating translations and revisions. Alternatives such as CC BY-SA 4.0 should be chosen consciously. **Do not** place a blanket CC BY statement in the footer or README that could be read as licensing upstream content or CC BY-ND artwork. Note also that **CC BY-ND images are not freely adaptable** and should not be described as open source software assets.
+Project licensing follows the path-based scope in [README.md](../../README.md), [CONTENT_LICENSE.md](../../CONTENT_LICENSE.md), and [CONTRIBUTING.md](../../CONTRIBUTING.md). These licenses apply only to contributions the project contributors have the right to license; they do not cover upstream material or third-party assets. **Do not** use a blanket license statement that could be read as licensing upstream content or CC BY-ND artwork. CC BY-ND images are not freely adaptable and should not be described as open source software assets.
 
 ### 7.2 Copyright and contribution ownership
 
@@ -310,7 +309,3 @@ The Phase 1 release is acceptable only if the following remain true, regardless 
 - GitHub — deploying a website automatically: https://docs.github.com/en/get-started/start-your-journey/deploying-your-website-automatically
 - GitHub — licensing a repository: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository
 - GitHub / Choose a License — no license: https://choosealicense.com/no-permission/
-
----
-
-**Version 0.5 change summary:** Extracts the former §10 definition of done into implementation stories plus release invariants; extracts actionable Phase 2–5 work from former §11 while retaining cross-phase requirements in §2; moves former §12 choices to [opendecisions.md](opendecisions.md), with factual verification tracked in [backlog.md](backlog.md). Story IDs are stable and follow `sp-N`. The independently hosted proof-of-concept and rights model are unchanged.

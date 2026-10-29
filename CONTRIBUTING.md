@@ -2,7 +2,7 @@
 
 Thank you for considering a contribution. This project aims to be collaborative while preserving **clear copyright ownership, a predictable license for each type of contribution, and reliable attribution**.
 
-**Before submitting a pull request, read this document and include the contribution-license confirmation shown below.** Maintainers will not merge contributions whose ownership, licensing, or provenance is unclear.
+**Before submitting a pull request, read this document and complete the required licensing and attribution checklist in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md).** Maintainers will not merge a pull request with an incomplete confirmation or unclear ownership, licensing, or provenance.
 
 ## 1. License scope: choose the right directory
 
@@ -23,7 +23,7 @@ The **folder does not change the legal rights in imported material**. Contributo
 
 ## 2. Contributor rights and licensing agreement
 
-By submitting a pull request and making the confirmation below, you certify that:
+By submitting a pull request and completing the required confirmation in its template, you certify that:
 
 1. **You have the right to contribute.** Your work is your own, or you have identified and documented all third-party material and have the rights needed to submit it under the stated terms.
 2. **You retain copyright.** You are not assigning your copyright to the project, its owner, or its maintainers.
@@ -38,26 +38,9 @@ By submitting a pull request and making the confirmation below, you certify that
 
 ## 3. Required pull-request license confirmation
 
-**Include the following text in every pull request description.** Mark all applicable contribution categories and check each certification. Maintainers should request correction before merging a PR without this confirmation.
+Every pull request must use the [pull request template](.github/PULL_REQUEST_TEMPLATE.md) and complete its **Licensing and attribution confirmation** section. Select every applicable contribution type and check each certification. For a change with no original copyrightable material, select that option and explain why. Maintainers must request completion or clarification before merging a pull request with an incomplete checklist or unclear rights.
 
-```markdown
-### Contribution license confirmation
-
-Contribution type (check all that apply):
-- [ ] MIT-scoped files (code, templates, scripts, project documentation) — I license my original contribution under MIT (`LICENSE`).
-- [ ] CC-scoped files (`content/`, `i18n/`, `translations/`, `assets/editorial/`) — I license my original contribution under CC BY-NC-SA 4.0 (`CONTENT_LICENSE.md`).
-- [ ] Third-party material — I have listed the source, applicable license/permission, copyright holders, and required attribution in the PR and `THIRD_PARTY_NOTICES.md` as appropriate; this material is NOT automatically relicensed.
-
-I confirm that:
-- [ ] I have the rights required to submit the material under the stated license(s).
-- [ ] I retain copyright to my own contribution and grant the public the rights in the applicable license(s).
-- [ ] I have identified and credited any source material, original authors, translators, and modifications.
-- [ ] No unlicensed upstream Scrum Primer text, PDFs, or translations are included.
-```
-
-For a PR containing only MIT-scoped files, select only the MIT contribution type; for a PR combining MIT and CC-scoped files, select both. If a PR adds no original copyrightable material (for example, it only fixes an external URL), explain that in the PR description; a maintainer may note that the substantive license check is not applicable.
-
-This statement should be added by the contributor, not filled out automatically on their behalf. Project maintainers may later enforce this review process with a GitHub pull-request template or automated checks.
+The contributor must make the confirmation; it must not be completed on their behalf. The template makes this requirement visible at submission. It is a review requirement and is not currently enforced by an automated check.
 
 ## 4. Content attribution requirements
 
