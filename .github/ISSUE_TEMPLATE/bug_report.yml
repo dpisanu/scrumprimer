@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a problem with the project website or its tooling
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report problems with this independent project. Do not include private data or reproduce upstream Scrum Primer text or publications.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and where you encountered it.
+      placeholder: Include the page URL or file path when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include concise steps, if applicable.
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, operating system, or tool version, if relevant.
+    validations:
+      required: false

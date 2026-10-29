@@ -1,0 +1,36 @@
+name: Rights or attribution question
+description: Raise a licensing, permission, provenance, or attribution concern
+title: "[Rights]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste or attach potentially unlicensed upstream text, publications, or artwork. Link to the public source and describe the concern without reproducing the material.
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected project file or page
+      description: Identify the project path or URL, if applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source or rights information
+      description: Provide public source links and known author, license, or permission details. Do not include material you do not have permission to reproduce.
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern or requested review
+      description: Explain what should be checked or corrected.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights confirmation
+      options:
+        - label: I have not included copyrighted text or files that I do not have permission to share in this issue.
+          required: true

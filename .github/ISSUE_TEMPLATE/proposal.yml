@@ -1,0 +1,29 @@
+name: Proposal
+description: Suggest an improvement or new project work
+title: "[Proposal]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the project backlog and open decisions first. Proposals should respect the project's independence, licensing, and rights requirements.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need
+      description: What user or project need would this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the change and its intended outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope, constraints, or related backlog story
+      description: Include any relevant sp-N story or open decision.
+    validations:
+      required: false

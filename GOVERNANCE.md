@@ -20,6 +20,15 @@ Changes to project-wide licensing, contribution terms, or governance must be exp
 
 Contributions follow [CONTRIBUTING.md](CONTRIBUTING.md) and the repository's pull request template. Maintainers review rights and provenance as well as technical quality. Unclear or disputed material must not be published while the concern is unresolved; maintainers may temporarily remove affected material while investigating.
 
+For each pull request, the assigned reviewer should check that:
+
+- The change identifies a backlog story or explains why no story applies, and stays within the stated scope.
+- Relevant tests or validation are reported and are appropriate for the change.
+- Required licensing and attribution confirmations are complete; sources, permissions, and content metadata are adequate for any new material.
+- The change does not introduce unlicensed upstream text, publications, translations, or assets, or imply official affiliation.
+
+Do not merge while required rights confirmations are missing or a material provenance concern remains unresolved. The repository's [CODEOWNERS](.github/CODEOWNERS) file identifies the current default reviewer; maintainers can update it when review ownership changes.
+
 ## Releases and future collaboration
 
 The project may publish an independent GitHub Pages site after the specification's release requirements are met. Any proposal to collaborate with or transfer the project to the original maintainers is voluntary and requires a separate agreement. It does not by itself transfer contributors' copyrights or change previously granted licenses.

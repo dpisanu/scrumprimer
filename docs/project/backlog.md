@@ -21,7 +21,7 @@ This file tracks **implementable work**, not legal permissions, enduring archite
 | sp-3 | Phase 0 | Implement PR validation for Hugo builds, front-matter schema, expected routes, and project-path links. | To Do | — |
 | sp-4 | Phase 0 | Configure GitHub Pages deployment from protected `main` via GitHub Actions, with least-privilege workflow permissions. | To Do | — |
 | sp-5 | Phase 0 | Write `README.md`, `CONTRIBUTING.md`, `GOVERNANCE.md`, `CODE_OF_CONDUCT.md`, `COPYRIGHT.md`, `CONTENT_LICENSE.md`, `ATTRIBUTION.md`, and the new-code `LICENSE` with appropriately scoped rights statements. | Done | — |
-| sp-6 | Phase 0 | Add issue and PR templates, `CODEOWNERS`, reviewer responsibilities, and contributor rights-confirmation instructions. | In Progress | — |
+| sp-6 | Phase 0 | Add issue and PR templates, `CODEOWNERS`, reviewer responsibilities, and contributor rights-confirmation instructions. | Done | — |
 | sp-7 | Phase 0 | Build the content-and-asset provenance inventory (`data/rights.yaml`) and define the rights-status/front-matter validation policy. | To Do | — |
 | sp-8 | Phase 1 | Build original Hugo layouts, navigation, and reusable page components for the five English routes. | To Do | — |
 | sp-9 | Phase 1 | Prepare and publish the English homepage from Markdown, with origin metadata and public-use rights verified before publication. | To Do | — |
