@@ -1,0 +1,39 @@
+name: Pull request validation
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Read pinned Hugo version
+        id: hugo-version
+        shell: bash
+        run: echo "version=$(cat .hugo-version)" >> "$GITHUB_OUTPUT"
+
+      - name: Install Hugo Extended
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ steps.hugo-version.outputs.version }}
+          extended: true
+
+      - name: Build site
+        run: hugo --destination public
+
+      - name: Validate content and generated routes
+        run: python scripts/validate_site.py

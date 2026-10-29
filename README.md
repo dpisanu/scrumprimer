@@ -39,6 +39,14 @@ hugo
 
 Hugo writes generated files to `public/`, which is ignored by Git. Until the site layouts are added, Hugo warns that HTML templates are missing; the command currently validates the configuration and content setup rather than producing a complete website. The configured base URL targets the independent GitHub Pages project path; do not change it to `scrumprimer.org`.
 
+The pull-request checks run the same validation after the build:
+
+```sh
+python scripts/validate_site.py
+```
+
+This checks the required front matter fields, expected routes in `tests/expected-pages.txt`, and project-path URLs in the sitemap and any generated HTML. Add a route to the expected-pages list when its content story is implemented.
+
 ## License scope — determined by repository path
 
 This is a **multi-license repository**. The rules below identify the intended licenses of **original work contributed to this project**. They do **not** transfer rights in third-party material or upstream Scrum Primer content.

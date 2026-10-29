@@ -1,0 +1,3 @@
+# Site-relative routes expected in the generated sitemap.
+# Add routes as their content stories are implemented.
+/
