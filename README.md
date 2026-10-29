@@ -29,6 +29,8 @@ See the [project specification](docs/project/SPEC.md), [product backlog](docs/pr
 
 Project policies: [governance](GOVERNANCE.md), [code of conduct](CODE_OF_CONDUCT.md), [copyright](COPYRIGHT.md), [content license](CONTENT_LICENSE.md), [attribution](ATTRIBUTION.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
 
+Content and asset provenance is tracked in [data/rights.yaml](data/rights.yaml); required metadata and publication approval are defined in the [rights validation policy](docs/project/rights-policy.md). Current CI does not yet enforce the full rights policy.
+
 ## Local Hugo validation
 
 Install Hugo Extended at the exact version in [.hugo-version](.hugo-version). From the repository root, run:

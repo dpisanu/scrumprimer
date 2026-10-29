@@ -78,6 +78,8 @@ changes: "German translation of an authorized CC BY-NC-SA 4.0 work"
 
 Replace these examples with real names and genuine sources. Record additional rights or permission details in the PR or file metadata where needed. For additions to existing pages, preserve prior authors and change notices; do not overwrite earlier attribution.
 
+For editorial content or assets, add or update the corresponding record in [data/rights.yaml](data/rights.yaml). Follow the [rights-status and front-matter policy](docs/project/rights-policy.md) and keep the record consistent with page metadata and third-party notices. Leave publication approval false until a maintainer has verified the required rights evidence.
+
 ### Important rules for translations and upstream material
 
 - A **translation is normally an adaptation**. The translator's new copyright does not eliminate rights in the source text.

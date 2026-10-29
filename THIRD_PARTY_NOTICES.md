@@ -8,6 +8,8 @@ The path-based licensing rules in [README.md](README.md) apply only to **origina
 
 Generated HTML, PDF, and EPUB files may incorporate material from multiple sources. Each incorporated work retains its own license, so the build output is not automatically wholly MIT or wholly CC BY-NC-SA.
 
+The structured [provenance inventory](data/rights.yaml) tracks local content and assets under the [rights validation policy](docs/project/rights-policy.md). Keep it synchronized with the concrete asset credits recorded here.
+
 ## Original Scrum Primer project
 
 - **Original website:** <https://scrumprimer.org/>

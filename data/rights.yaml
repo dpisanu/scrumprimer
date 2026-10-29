@@ -1,0 +1,23 @@
+# Provenance inventory; policy: docs/project/rights-policy.md.
+# Status and approval fields are tracking information, not license grants.
+content:
+  - id: home-en
+    path: content/en/_index.md
+    page_id: home
+    lang: en
+    origin: original-project
+    rights_status: original-project
+    authors: []
+    translators: []
+    license: null
+    source_url: null
+    based_on: null
+    changes: "Front-matter-only scaffold; no editorial body text."
+    permission_reference: null
+    reviewed_by: null
+    last_reviewed: null
+    approved_for_publication: false
+    notes: "Complete authorship, licensing, and rights review when implementing sp-9. The directory license does not establish authorship or approval."
+
+# No artwork, fonts, or other editorial/third-party assets are imported yet.
+assets: []
