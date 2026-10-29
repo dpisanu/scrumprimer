@@ -4,6 +4,22 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "content/**"
+      - "layouts/**"
+      - "assets/**"
+      - "static/**"
+      - "data/**"
+      - "i18n/**"
+      - "themes/**"
+      - "config/**"
+      - "hugo.*"
+      - ".hugo-version"
+      - "go.mod"
+      - "go.sum"
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:

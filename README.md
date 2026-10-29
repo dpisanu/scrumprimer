@@ -51,7 +51,9 @@ This checks the required front matter fields, expected routes in `tests/expected
 
 ## GitHub Pages deployment
 
-The Pages workflow builds on pushes to `main` and can be run manually. It deploys only when the workflow ref is `main`; pull requests are validated by the separate CI workflow and are not deployed.
+The Pages workflow builds on pushes to `main` only when site inputs or build checks change: content, layouts, assets, static files, data, interface translations, themes, Hugo configuration/version/modules, scripts, tests, or the Pages workflow itself. Documentation-only changes (including the backlog, specification, README, and contribution policies) do not trigger deployment.
+
+Manual **Run workflow** remains available regardless of changed paths. Deployment still requires the workflow ref to be `main`; pull requests are validated by the separate CI workflow and are not deployed. PR validation remains unfiltered so documentation-only PRs still receive the required `validate` check. Update the Pages path filters when introducing new build inputs, such as export dependencies or source directories.
 
 Before the first deployment, configure the repository:
 

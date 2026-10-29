@@ -56,6 +56,7 @@ This file tracks **implementable work**, not legal permissions, enduring archite
 | sp-39 | Phase 1 | Implement Guide contents, independent chapter routes, previous/next navigation and complete reading view from sp-38 and sp-8, using independently authored test content until original Guide publication is authorized. | To Do | — |
 | sp-40 | Phase 1 | Convert and review the authorized English Guide into Markdown chapters, preserving source structure, original credits/notices and rights records; blocked until sp-37 documents sufficient rights and sp-38 defines composition. | Blocked | — |
 | sp-41 | Phase 3 | Validate Guide translation source revisions, review freshness and edition completeness; prevent incomplete or silently mixed-language whole-Guide exports while flagging stale translations for review. | To Do | — |
+| sp-42 | Phase 0 | Limit automatic GitHub Pages builds/deployments to changes in site inputs, build checks or the Pages workflow; preserve manual deployment and unfiltered required PR validation. | Done | — |
 
 ## Phase descriptions and readiness notes
 
