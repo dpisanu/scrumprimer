@@ -1,0 +1,11 @@
+baseURL = "https://dpisanu.github.io/scrumprimer/"
+locale = "en"
+title = "Scrum Primer — Independent Project"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages.en]
+contentDir = "content/en"
+locale = "en"
+label = "English"
+weight = 1

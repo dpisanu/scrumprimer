@@ -29,6 +29,16 @@ See the [project specification](docs/project/SPEC.md), [product backlog](docs/pr
 
 Project policies: [governance](GOVERNANCE.md), [code of conduct](CODE_OF_CONDUCT.md), [copyright](COPYRIGHT.md), [content license](CONTENT_LICENSE.md), [attribution](ATTRIBUTION.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
 
+## Local Hugo validation
+
+Install Hugo Extended at the exact version in [.hugo-version](.hugo-version). From the repository root, run:
+
+```sh
+hugo
+```
+
+Hugo writes generated files to `public/`, which is ignored by Git. Until the site layouts are added, Hugo warns that HTML templates are missing; the command currently validates the configuration and content setup rather than producing a complete website. The configured base URL targets the independent GitHub Pages project path; do not change it to `scrumprimer.org`.
+
 ## License scope — determined by repository path
 
 This is a **multi-license repository**. The rules below identify the intended licenses of **original work contributed to this project**. They do **not** transfer rights in third-party material or upstream Scrum Primer content.
