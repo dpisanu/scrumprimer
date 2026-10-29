@@ -47,6 +47,18 @@ python scripts/validate_site.py
 
 This checks the required front matter fields, expected routes in `tests/expected-pages.txt`, and project-path URLs in the sitemap and any generated HTML. Add a route to the expected-pages list when its content story is implemented.
 
+## GitHub Pages deployment
+
+The Pages workflow builds on pushes to `main` and can be run manually. It deploys only when the workflow ref is `main`; pull requests are validated by the separate CI workflow and are not deployed.
+
+Before the first deployment, configure the repository:
+
+1. In **Settings → Pages**, set the source to **GitHub Actions**.
+2. Protect `main` by requiring pull requests and the `validate` job from **Pull request validation** before merging.
+3. In **Settings → Environments**, create or review the `github-pages` environment and restrict deployments to `main`.
+
+The workflow grants read-only repository access to its build job. Only the deployment job receives `pages: write` and `id-token: write`. Do not configure `scrumprimer.org` as a custom domain or change its DNS.
+
 ## License scope — determined by repository path
 
 This is a **multi-license repository**. The rules below identify the intended licenses of **original work contributed to this project**. They do **not** transfer rights in third-party material or upstream Scrum Primer content.
