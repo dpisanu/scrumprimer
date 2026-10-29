@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ .Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} — Scrum Primer Corner</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    <style>
+      :root { color-scheme: light; font-family: system-ui, sans-serif; color: #252525; background: #faf8f5; }
+      * { box-sizing: border-box; }
+      body { margin: 0; line-height: 1.65; overflow-wrap: anywhere; }
+      main, footer { width: min(100% - 2rem, 48rem); margin-inline: auto; }
+      main { padding-block: clamp(2rem, 6vw, 4rem); }
+      h1, h2 { line-height: 1.2; }
+      h1 { font-size: clamp(2rem, 6vw, 3rem); }
+      h2 { margin-top: 2rem; }
+      img { display: block; max-width: 100%; height: auto; margin-inline: auto; }
+      .logo { width: min(100%, 24rem); margin-bottom: 2rem; }
+      footer { border-top: 1px solid #ccc; padding-block: 1.5rem; font-size: 0.9rem; }
+      a { color: #8d1717; text-underline-offset: 0.2em; }
+      a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+    </style>
+  </head>
+  <body>
+    <main id="main">
+      {{ $publicationApproved := false }}
+      {{ range hugo.Data.rights.content }}
+        {{ if and (eq .page_id $.Params.page_id) (eq .lang $.Language.Lang) .approved_for_publication }}
+          {{ $publicationApproved = true }}
+        {{ end }}
+      {{ end }}
+      {{ if $publicationApproved }}
+        {{ range hugo.Data.rights.assets }}
+          {{ if and (eq .id $.Params.logo_id) .approved_for_publication }}
+            {{ $logo := resources.Get (strings.TrimPrefix "assets/" .path) }}
+            <img class="logo" src="{{ $logo.RelPermalink }}" width="960" height="768" alt="The Scrum Primer Corner — red vintage stamp logo">
+          {{ end }}
+        {{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+      {{ else }}
+        <h1>Scrum Primer Corner</h1>
+        <p>The landing page is being prepared. Editorial content and artwork are awaiting rights review before publication.</p>
+      {{ end }}
+    </main>
+    <footer>
+      <p>Independent community project, not the official Scrum Primer website. Not affiliated with or endorsed by the original authors or maintainers.</p>
+      <p>Each work retains its own rights and license. Community collaboration does not imply a blanket license for the Guide or illustrations.</p>
+      <p><a href="https://scrumprimer.org/">Visit the original Scrum Primer website</a></p>
+    </footer>
+  </body>
+</html>

@@ -7,17 +7,35 @@ content:
     lang: en
     origin: original-project
     rights_status: original-project
-    authors: []
+    authors: ["dpisanu"]
     translators: []
-    license: null
+    license: "CC-BY-NC-SA-4.0"
     source_url: null
     based_on: null
-    changes: "Front-matter-only scaffold; no editorial body text."
-    permission_reference: null
-    reviewed_by: null
-    last_reviewed: null
-    approved_for_publication: false
-    notes: "Complete authorship, licensing, and rights review when implementing sp-9. The directory license does not establish authorship or approval."
+    changes: "Original landing-page copy supplied by the project owner."
+    permission_reference: "docs/project/landing-page-permission.md"
+    reviewed_by: "dpisanu"
+    last_reviewed: "2026-10-29"
+    approved_for_publication: true
+    notes: "The project owner confirmed sole creation/ownership and authorized use under the existing contribution policy."
 
-# No artwork, fonts, or other editorial/third-party assets are imported yet.
-assets: []
+assets:
+  - id: corner-logo
+    path: "assets/editorial/vintage_red_stamp_ScrumPrimerCorner.png"
+    origin: original-project
+    rights_status: original-project
+    title: "Scrum Primer Corner red-stamp logo"
+    authors: ["dpisanu"]
+    source_page: null
+    asset_url: null
+    license: "CC-BY-NC-SA-4.0"
+    license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    copyright_notice: null
+    attribution: "Scrum Primer Corner logo by dpisanu, created using AI; CC BY-NC-SA 4.0."
+    unchanged: true
+    checksum_sha256: "a274531e58a9673aea8c939c0e12e8222b8047bc3a24988643a1a6ac11cdd2db"
+    permission_reference: "docs/project/landing-page-permission.md"
+    reviewed_by: "dpisanu"
+    last_reviewed: "2026-10-30"
+    approved_for_publication: true
+    notes: "Owner confirmed this unique logo is owned by them and licensed under CC BY-NC-SA 4.0. Created using AI, loosely based on an original image; generation tool and reference image unspecified."

@@ -8,7 +8,7 @@ This policy defines the provenance inventory and rights/front-matter checks for 
 
 Keep the inventory synchronized with content front matter and the human-readable third-party notices when adding, modifying, moving, or removing files. Paths are repository-relative, use forward slashes, and must identify an existing file without `..` segments. IDs and paths must be unique across the inventory; content `page_id` values must be unique within each language.
 
-The current inventory contains only the English home scaffold. Its authorship and review fields are deliberately incomplete and it is not approved for publication. Do not copy upstream prose into it to fill the gap. Original publication binaries and upstream translations remain external; their download links belong in `data/publications.yaml` when `sp-15` is implemented.
+The current inventory contains the original English landing-page copy and the owner's AI-assisted logo, both contributed under CC BY-NC-SA 4.0. Their publication approval and the owner's declarations are documented in the [landing-page permission record](landing-page-permission.md). Original publication binaries and upstream translations remain external; their download links belong in `data/publications.yaml` when `sp-15` is implemented.
 
 ## Content records and front matter
 

@@ -23,7 +23,7 @@ This file tracks **implementable work**, not legal permissions, enduring archite
 | sp-6 | Phase 0 | Add issue and PR templates, `CODEOWNERS`, reviewer responsibilities, and contributor rights-confirmation instructions. | Done | — |
 | sp-7 | Phase 0 | Build the content-and-asset provenance inventory (`data/rights.yaml`) and define the rights-status/front-matter validation policy. | Done | — |
 | sp-8 | Phase 1 | Build original responsive Hugo layouts, navigation and reusable components for the resource-oriented structure agreed in sp-35, supporting Guide chapter layouts without assuming five upstream-style routes. | To Do | — |
-| sp-9 | Phase 1 | Publish an original English landing page introducing the Guide, illustration resources, available languages and project status, with verified rights metadata. | To Do | — |
+| sp-9 | Phase 1 | Extend the initial sp-43 landing page with resource discovery, available languages and verified destinations as the catalog becomes available, retaining project status and verified rights metadata. | To Do | — |
 | sp-10 | Phase 1 | Publish the standard overview resource view using the sp-36 catalog, approved sp-14 variants, language selection, labeled English fallback and attribution. | To Do | — |
 | sp-11 | Phase 1 | Publish the anime overview resource view using the sp-36 catalog, approved sp-14 variants, language selection, labeled English fallback and attribution. | To Do | — |
 | sp-12 | Phase 1 | Publish project information with accurate original-author credits, independence, contribution/contact links and public-use rights status. | To Do | — |
@@ -57,6 +57,7 @@ This file tracks **implementable work**, not legal permissions, enduring archite
 | sp-40 | Phase 1 | Convert and review the authorized English Guide into Markdown chapters, preserving source structure, original credits/notices and rights records; blocked until sp-37 documents sufficient rights and sp-38 defines composition. | Blocked | — |
 | sp-41 | Phase 3 | Validate Guide translation source revisions, review freshness and edition completeness; prevent incomplete or silently mixed-language whole-Guide exports while flagging stale translations for review. | To Do | — |
 | sp-42 | Phase 0 | Limit automatic GitHub Pages builds/deployments to changes in site inputs, build checks or the Pages workflow; preserve manual deployment and unfiltered required PR validation. | Done | — |
+| sp-43 | Phase 1 | Publish the initial English "Scrum Primer Corner" landing page using the supplied copy and red-stamp PNG logo, with responsive accessible rendering, independence notice and verified content/logo provenance; see story details below. | Done | — |
 
 ## Phase descriptions and readiness notes
 
@@ -76,7 +77,7 @@ See [opendecisions.md](opendecisions.md) for choices that affect story implement
 ## Recommended sequence and dependencies
 
 1. Agree information architecture and routes in sp-35; start sp-37 rights investigation in parallel. This planning revision does not mark either implementation story complete.
-2. Deliver sp-24 locale foundations and sp-8/sp-9 English layouts/landing page; implement sp-36 catalog and verify source records through sp-14/sp-15.
+2. Deliver sp-43 as the initial English landing page with minimal layout support; it can precede the broader architecture work. Extend it through sp-24 locale foundations, sp-8 reusable layouts and sp-9 catalog-backed discovery as sp-36 and verified sp-14/sp-15 records become available.
 3. Use the catalog and approved records in sp-10/sp-11; deliver sp-12/sp-16 disclosures and sp-17/sp-18 checks before baseline acceptance in sp-19.
 4. Define sp-38 before sp-39 reading views and sp-29/sp-30 exports. Technical prototypes use independent test content; they do not depend on permission to copy the Guide.
 5. Unblock sp-40 only with sufficient rights evidence from sp-37 and the sp-38 composition contract. Integrate actual authorized chapters with sp-39, sp-29/sp-30 and sp-31 before full Guide acceptance in sp-19.
