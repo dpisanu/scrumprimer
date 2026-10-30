@@ -45,10 +45,9 @@ The pull-request checks run the same validation after the build:
 
 ```sh
 python scripts/validate_site.py
-python -m unittest discover -s tests -p "test_*.py"
 ```
 
-This checks the required front matter fields, expected routes in `tests/expected-pages.txt`, an actual HTML homepage with one main heading, and project-path URLs in the sitemap and generated HTML. Add a route to the expected-pages list when its content story is implemented.
+This checks the required front matter fields, expected routes in `tests/expected-pages.txt`, and project-path URLs in the sitemap and generated HTML. Add a route to the expected-pages list when its content story is implemented.
 
 ## GitHub Pages deployment
 

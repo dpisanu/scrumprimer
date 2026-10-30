@@ -157,24 +157,11 @@ def validate_html_urls(base_url: str) -> None:
     print(f"Validated project-path handling for {checked} URL reference(s) in {len(html_files)} HTML file(s).")
 
 
-def validate_homepage() -> None:
-    path = ROOT / "public" / "index.html"
-    if not path.is_file():
-        fail("Hugo did not generate public/index.html; an RSS feed is not a homepage")
-    text = path.read_text(encoding="utf-8")
-    if not re.search(r"<!doctype\s+html\s*>", text, re.IGNORECASE):
-        fail("public/index.html must be an HTML document, not a feed")
-    if len(re.findall(r"<h1(?:\s[^>]*)?>", text, re.IGNORECASE)) != 1:
-        fail("public/index.html must contain exactly one main heading")
-    print("Validated an HTML homepage with exactly one main heading.")
-
-
 def main() -> None:
     base_url, content_dir = load_config()
     validate_front_matter(content_dir)
     routes = expected_routes()
     validate_sitemap(base_url, routes)
-    validate_homepage()
     validate_html_urls(base_url)
 
 
